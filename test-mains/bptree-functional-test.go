@@ -8,7 +8,7 @@ import (
 	"os"
 	"time"
 
-	bptree "github.com/lleo/bptree-functional"
+	bptree "github.com/lleo/go-bptree-functional"
 	"github.com/lleo/util"
 )
 
