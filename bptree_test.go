@@ -1,11 +1,12 @@
 package bptree
 
 import (
-	"github.com/lleo/util"
 	"math"
 	"math/rand"
 	"os"
 	"testing"
+
+	"github.com/lleo/util"
 )
 
 type entry struct {
@@ -248,12 +249,12 @@ func TestRandomPutAndDelWithOrderThreeToSixtyFour(t *testing.T) {
 //			t.Logf("TestValidInOrderTree: bpt.Get(ent.key=%q) found a incorrect value; ent.val=%d; val=%d", ent.key, ent.val, val)
 //			t.Fail()
 //		}
-                                                                     //	}
+//	}
 //
 //}
 
 func genRandomizedEntriesTmpSlice(ents []entry) []entry {
-cd.	tmpEnts := make([]entry, len(ents))
+	tmpEnts := make([]entry, len(ents))
 	copy(tmpEnts, ents)
 
 	randomEnts := make([]entry, 0, len(ents))
