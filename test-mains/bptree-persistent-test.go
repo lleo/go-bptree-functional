@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/lleo/bptree-persistent"
+	bptree "github.com/lleo/bptree-functional"
 	"github.com/lleo/util"
 	"log"
 	"math/rand"
