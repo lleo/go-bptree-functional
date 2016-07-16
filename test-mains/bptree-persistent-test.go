@@ -3,12 +3,13 @@ package main
 import (
 	"flag"
 	"fmt"
-	bptree "github.com/lleo/bptree-functional"
-	"github.com/lleo/util"
 	"log"
 	"math/rand"
 	"os"
 	"time"
+
+	bptree "github.com/lleo/bptree-functional"
+	"github.com/lleo/util"
 )
 
 type entry struct {
@@ -35,7 +36,7 @@ func genRandomizedEntriesTmpSlice(ents []entry) []entry {
 	return randomEnts
 }
 
-var lgr = log.New(os.Stderr, "[bptree-persistent-test] ", log.Lshortfile)
+var lgr = log.New(os.Stderr, "[bptree-functional-test] ", log.Lshortfile)
 
 //First genRandomizedEntries() copies []entry passed in. Then it randomizes that
 //copy in-place. Finnally, it returns the randomized copy.
